@@ -1,0 +1,19 @@
+openapi: 3.0.3
+info:
+  title: Anyformat Document API
+  version: 1.0.0
+
+paths:
+  /v1/documents:
+    post:
+      summary: Upload a document for parsing
+      responses:
+        '200':
+          description: Document accepted for processing
+
+  /v1/documents/{id}:
+    get:
+      summary: Retrieve parsed document results
+      responses:
+        '200':
+          description: Parsed document data
